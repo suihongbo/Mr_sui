@@ -419,7 +419,7 @@
     from{
         width:0%;
     }to{
-         width:50%;
+         width:60%;
      }
 }
 .block7{
@@ -447,11 +447,24 @@
     /* background: #fdbb08;
     animation: play5 2s ease forwards;       */
 }
+.block11{
+    height:19px;
+    border-radius: 10px;
+    /* background: #fdbb08;
+    animation: play5 2s ease forwards;       */
+}
 @keyframes play5{
     from{
         width:0%;
     }to{
          width:75%;
+     }
+}
+@keyframes play6{
+    from{
+        width:0%;
+    }to{
+         width:80%;
      }
 }
 .skill-line1{
@@ -473,6 +486,9 @@
 #contact{
     height:800px;
     padding:100px 0 0 0;
+}
+#contact .go-to{
+    margin-top: 40px;
 }
 @keyframes jackInTheBox {
     from {

@@ -13,6 +13,7 @@ oQingfeng.onmouseout = function () {
     timerChangeColor = setInterval("changeColor()",500);
 }
 //字体变色结束
+
 //mark自动隐藏
 setTimeout(function () {
     $("#mark").css({
@@ -25,7 +26,8 @@ setTimeout(function () {
         "display": "none"
     });
 }, 3000);
-//mark自动隐藏结束
+
+//
 $('.carousel').carousel({
     interval: 2000
 })
@@ -50,7 +52,7 @@ $(".info3").css({
     top: 400
 });
 
-
+//导航动画
 $("#move a").on("click", function (e) {
     var href = $(this).attr("href"); //#div1 #dvi2 #div3
     var top = $(href).offset().top;
@@ -67,22 +69,9 @@ window.onpopstate = function (e) {
     }, 500);
 };
 
-
-
-// 滑动滚动条
+// 滑动滚动条 技能掌握
 $(window).scroll(function () {
-    //动态照片
-    if ($(document).scrollTop() + 10 >= $("#personal").offset().top) {
-        $("#move li:nth-child(1)").addClass("active").siblings().removeClass("active");
-        $(".info1,#mark1").css({
-            "transition": "all 1s ease",
-            "left": "100px"
-        });
-        $(".info2,.info3,#mark2").css({
-            "transition": "all 1s ease",
-            "right": "100px"
-        });
-    };
+
     if ($(document).scrollTop() + 10 >= $("#skill").offset().top) {
         $("#move li:nth-child(2)").addClass("active").siblings().removeClass("active");
         //动态圆
@@ -110,7 +99,7 @@ $(window).scroll(function () {
         });
         $(".block4,.block5").css({
             "background": "#099fff",
-            "animation": "play3 2s ease forwards"
+            "animation": "play4 2s ease forwards"
         });
         $(".block6").css({
             "background": "#40c7ac",
@@ -122,15 +111,19 @@ $(window).scroll(function () {
         })
         $(".block8").css({
             "background": "#fdbb08",
-            "animation": "play2 2s ease forwards"
+            "animation": "play5 2s ease forwards"
         })
         $(".block9").css({
             "background": "#fdbb08",
-            "animation": "play4 2s ease forwards"
+            "animation": "play3 2s ease forwards"
         })
         $(".block10").css({
             "background": "#fdbb08",
-            "animation": "play5 2s ease forwards"
+            "animation": "play3 2s ease forwards"
+        })
+        $(".block11").css({
+            "background": "#fdbb08",
+            "animation": "play6 2s ease forwards"
         })
     }
     if ($(document).scrollTop() + 10 >= $("#project").offset().top) {
@@ -146,16 +139,10 @@ $(window).scroll(function () {
         $("#move li").removeClass("active");
     };
 });
-
+//回到顶部按钮
 $("button[type='button']").on("click", function () {
     $('body,html').animate({
         scrollTop: 0
     }, 1500);
 });
 
-
-setTimeout(function () {
-    $(".personal-word,.info4").css({
-        "animation":"jello 1s ease forwards"
-    });
-}, 4001);
