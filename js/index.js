@@ -146,3 +146,32 @@ $("button[type='button']").on("click", function () {
     }, 1500);
 });
 
+
+
+$(".abl-icon i").on("mouseover",function() {
+    $(this).css({
+        "background" : "#3B5998",
+        "color" : "white"
+    });
+    $(this).css("transform","rotate(360deg)");
+    $(this).css("-webkit-transform","rotate(360deg)");
+    $(this).css("-moz-transform","rotate(360deg)");
+    $(this).css("-ms-transform","rotate(360deg)");
+    $(this).parent().parent().css( {
+        "background":"#f0ad4e",
+        "color" : "white"
+    });
+}).on("mouseout",function() {
+    $(this).css({
+        "color" : "#3B5998",
+        "background" : "white"
+    });
+    $(this).css("transform","rotate(0deg)");
+    $(this).css("-webkit-transform","rotate(0deg)");
+    $(this).css("-moz-transform","rotate(0deg)");
+    $(this).css("-ms-transform","rotate(0deg)");
+    $(this).parent().parent().css( {
+        "background":"#fbfbfb",
+        "color" : "black"
+    });
+});

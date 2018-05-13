@@ -77,6 +77,9 @@
 }
 /* personal */
 @media(max-width:768px){
+    #meMap{
+        display: none;
+    }
     #personal{
         padding-top:50px;
     }
@@ -484,8 +487,9 @@
     padding:100px 0 0 0;
 }
 #contact{
-    height:800px;
-    padding:100px 0 0 0;
+    /*height:700px;*/
+    padding:100px 0;
+    color: #fff;
 }
 #contact .go-to{
     margin-top: 40px;
@@ -517,4 +521,126 @@
 }
 
 
+/*翻转开始*/
+/*font awesome*/
+.ability-area {
+    background-color: #fbfbfb;
+}
+.section-title h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 35px;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.abl {
+    margin-top: 20px;
+    /*background: #ccc;*/
+    text-align: center;
+    height: 250px;
+    transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+}
+.abl-icon i{
+    display: block;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    margin: 10px auto;
+    border: 3px solid  #3B5998;
+    color: #3B5998;
+    cursor: pointer;
+}
+.abl h6 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px 0 3px 0;
+    text-align: center;
+    font-size: 15px!important;
+}
+.abl p {
+    margin-top: 20px;
+    line-height: 32px;
+    font-weight: 200;
+    font-size: 18px;
+}
 
+
+.section {
+    padding: 70px 0;
+}
+
+.section-title {
+    color: #333;
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 70px;
+    letter-spacing: 5px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: orange;
+    margin-bottom: 25px;
+    line-height: 35px;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.colo{
+    color: orange;
+}
+
+.section-title h2:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0;
+    background-color: #555;
+}
+
+.section-title p {
+    margin-top: 25px;
+}
+
+h3.subtitle {
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h3.subtitle:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: #555;
+}
+.fa-html5:before {
+    content: "\f13b";
+}
+.fa-pencil:before {
+    content: "\f040";
+}
+.fa-desktop:before {
+    content: "\f108";
+}
+/*翻转结束*/
